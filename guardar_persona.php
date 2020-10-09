@@ -6,7 +6,7 @@ $nombre = $_POST["nombre"];
 $apellido = $_POST["apellido"];
 $sexo = $_POST["sexo"];
 
-// INVESTIGAR SOBRE include vs require
+
 
 require("conector.php");
 
