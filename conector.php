@@ -1,5 +1,5 @@
 <?php
-
+//este archivo es el encargado de establecer la conexion a la base de datos mysql
 $host ="localhost";
 $login = "root";
 $password = "";
