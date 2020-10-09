@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.5.4.1deb2ubuntu2
+-- version 4.5.4.1deb2ubuntu2.1
 -- http://www.phpmyadmin.net
 --
 -- Servidor: localhost
--- Tiempo de generación: 23-07-2018 a las 12:27:02
--- Versión del servidor: 5.7.22-0ubuntu0.16.04.1
--- Versión de PHP: 7.0.30-0ubuntu0.16.04.1
+-- Tiempo de generación: 09-10-2020 a las 18:04:02
+-- Versión del servidor: 5.7.31-0ubuntu0.16.04.1
+-- Versión de PHP: 7.0.33-0ubuntu0.16.04.15
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -34,14 +34,6 @@ CREATE TABLE `personas` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
 
 --
--- Volcado de datos para la tabla `personas`
---
-
-INSERT INTO `personas` (`id`, `nombre`, `apellido`, `sexo`) VALUES
-(2, 'JUAN', 'FERRER', 'M'),
-(3, 'ADA', 'BYRON', 'F');
-
---
 -- Índices para tablas volcadas
 --
 
@@ -59,7 +51,7 @@ ALTER TABLE `personas`
 -- AUTO_INCREMENT de la tabla `personas`
 --
 ALTER TABLE `personas`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
