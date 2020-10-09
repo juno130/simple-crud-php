@@ -9,12 +9,13 @@
 <body>
     <h2>FORMULARIO</h2>
     <?php
+    //para verificar si existe un registro existente    
     $id = isset($_GET['id']) ? $_GET['id'] : 0;
     $nombre ="";
     $apellido ="";
     $sexo ="";
     require ("conector.php");
-
+    
     if($id>0){
         $sql ="SELECT * FROM personas WHERE id = ".$id;
         $resultados = mysqli_query($con, $sql) or die(mysqli_error());
@@ -45,7 +46,7 @@
         <button type="submit">GUARDAR</button>
 
     </form>
-
+    <?php //esto solamente se mostrara cuando hay un registro existente ?>
     <?php if($id>0){ ?>
         <form action="borrar_persona.php" method="post">
             <input type="hidden" name="id" id="id" value="<?php echo $id; ?>">
