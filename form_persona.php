@@ -15,6 +15,10 @@
     $apellido ="";
     $sexo ="";
     require ("conector.php");
+
+
+
+    
     
     if($id>0){
         $sql ="SELECT * FROM personas WHERE id = ".$id;
@@ -29,7 +33,22 @@
     }
 
 
+
+    if(isset($_COOKIE['mesaje_error'])){
+
+        echo "<h2>".$_COOKIE['mesaje_error']."</h2>";
+
+        unset($_COOKIE['mesaje_error']); 
+        setcookie('mesaje_error', ''); 
+
+    }
+
+
     ?>
+
+
+
+    
 
     <form action="guardar_persona.php" method="post">
         <input type="hidden" name="id" id="id" value="<?php echo $id; ?>">
